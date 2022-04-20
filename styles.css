@@ -1,5 +1,7 @@
 html {
   font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0rem;
 }
 body {
   height: 100vh;
@@ -35,12 +37,15 @@ body {
   color: #ABABAB;
   text-align: center;
   font-size: 2rem;
-  line-height: 30px;
+  line-height: 35px;
+}
+input:hover::-webkit-input-placeholder {
+  color: #eeeeee;
 }
 .input-link {
   color: #ABABAB;
   text-align: center;
-  font-size: 2REM;
+  font-size: 2rem;
   border: 4px dotted #ABABAB;
   border-radius: 50px;
   background-color: #111111;
