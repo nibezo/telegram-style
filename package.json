@@ -4,12 +4,11 @@
   "description": "Make a nice screenshot of any public telegram post easily!",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AleevTimur/telegram-style.git"
+    "url": "git+https://github.com/nibezo/telegram-style.git"
   },
   "keywords": [
     "telegram",
@@ -18,11 +17,10 @@
   "author": "nibezo",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AleevTimur/telegram-style/issues"
+    "url": "https://github.com/nibezo/telegram-style/issues"
   },
-  "homepage": "https://github.com/AleevTimur/telegram-style#readme",
+  "homepage": "https://github.com/nibezo/telegram-style#readme",
   "devDependencies": {
-    "lint-staged": "^12.3.8",
     "prettier": "2.6.2"
   }
 }
