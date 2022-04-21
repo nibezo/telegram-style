@@ -114,16 +114,37 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  column-gap: 2px;
   border-radius: 15px;
   overflow: hidden;
 }
 .color-pallette__colorpicker {
-  background-color: white;
   aspect-ratio: 1/1;
-  border-right: 1px solid black;
 }
-.color-pallette__colorpicker:nth-child(6) {
-  border-right: none;
+.colorpicker {
+  cursor: pointer;
+}
+.colorpicker--first {
+  background-image: linear-gradient(
+    to bottom right,
+    #fd6585,
+    rgb(255, 211, 165)
+  );
+}
+.colorpicker--second {
+  background-image: linear-gradient(to bottom right, #00dbde, #fc00ff);
+}
+.colorpicker--third {
+  background-image: linear-gradient(to bottom, #c084fc, #6366f1);
+}
+.colorpicker--fourth {
+  background-image: linear-gradient(to bottom, #ed6ea0, #ec8c69);
+}
+.colorpicker--fifth {
+  background-image: linear-gradient(to bottom right, #f9a8d4, #f472b6, #f87171);
+}
+.colorpicker--sixth {
+  background-image: linear-gradient(to bottom right, #84fab0, #8fd3f4);
 }
 .toolbar__buttons-group {
   display: flex;
