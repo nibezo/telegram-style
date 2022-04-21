@@ -13,6 +13,7 @@ html {
   --color-secondary: #ababab;
   --color-secondary-active: #eeeeee;
   --color-accent: #ec4899;
+  --color-accent-active: #cc2c7c;
 }
 body {
   height: 100vh;
@@ -176,13 +177,13 @@ body {
   border-radius: 10px;
   cursor: pointer;
   width: 100%;
-  transition: transform 0.1s;
+  transition: background-color 0.3s, transform 0.1s;
 }
 .btn:hover {
-  transform: scale(0.97, 0.97);
+  background-color: var(--color-accent-active);
 }
 .btn:active {
-  transform: scale(0.9, 0.9);
+  transform: scale(0.95, 0.95);
 }
 .btn--icon {
   display: flex;
