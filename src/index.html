@@ -2,7 +2,9 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap"
+      rel="stylesheet" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,57 +27,82 @@
             <main class="main">
               <section class="dropzone-container">
                 <div class="dropzone">
-                  <input type="text" class="input-link" placeholder="Paste here a link to a telegram post"/>
+                  <input
+                    type="text"
+                    class="input-link"
+                    placeholder="Paste here a link to a telegram post" />
                 </div>
               </section>
-              <section class="toolbar">
-                <ul class="toolbar__list toolbar-list">
-                  <li class="toolbar-list__item toolbar-item">
-                    <span class="toolbar-item__name">Aspect Ratio</span>
-                    <select name="aspect-ratio" id="aspect-ratio-select">
-                      <option value="auto">Auto</option>
-                      <option value="square">Square</option>
-                    </select>
-                  </li>
-                  <li class="toolbar-list__item toolbar-item">
-                    <span class="toolbar-item__name">Browser wrapper</span>
-                    <select name="browser-wrapper" id="browser-wrapper-select">
-                      <option value="light">Light</option>
-                      <option value="dark">Dark</option>
-                    </select>
-                  </li>
-                  <li class="toolbar-list__item toolbar-item">
-                    <span class="toolbar-item__name">Paddings</span>
-                    <input type="range" name="paddings" id="paddings-slider" />
-                  </li>
-                  <li class="toolbar-list__item toolbar-item">
-                    <span class="toolbar-item__name">Wrapper corners</span>
-                    <input
-                      type="range"
-                      name="wrapper-corners"
-                      id="wrapper-corners-slider" />
-                  </li>
-                  <li class="toolbar-list__item toolbar-item">
-                    <span class="toolbar-item__name">Shadow</span>
-                    <input type="range" name="shadow" id="shadow-slider" />
-                  </li>
-                  <li class="toolbar-list__item toolbar-item toolbar-item--big">
-                    <div class="toolbar-item__container">
-                      <span class="toolbar-item__name"> Background color </span>
-                      <div class="color-pallette">
-                        <button class="color-pallette__colorpicker"></button
-                        ><button class="color-pallette__colorpicker"></button
-                        ><button class="color-pallette__colorpicker"></button
-                        ><button class="color-pallette__colorpicker"></button
-                        ><button class="color-pallette__colorpicker"></button
-                        ><button class="color-pallette__colorpicker"></button>
+              <section class="toolbar-container">
+                <div class="toolbar">
+                  <ul class="toolbar__list toolbar-list">
+                    <li class="toolbar-list__item toolbar-item">
+                      <div class="toolbar-item__content">
+                        <span class="toolbar-item__name">Aspect Ratio</span>
+                        <select name="aspect-ratio" id="aspect-ratio-select">
+                          <option value="auto">Auto</option>
+                          <option value="square">Square</option>
+                        </select>
                       </div>
+                    </li>
+                    <li class="toolbar-list__item toolbar-item">
+                      <div class="toolbar-item__content">
+                        <span class="toolbar-item__name">Browser wrapper</span>
+                        <select
+                          name="browser-wrapper"
+                          id="browser-wrapper-select">
+                          <option value="light">Light</option>
+                          <option value="dark">Dark</option>
+                        </select>
+                      </div>
+                    </li>
+                    <li class="toolbar-list__item toolbar-item">
+                      <div class="toolbar-item__content">
+                        <span class="toolbar-item__name">Paddings</span>
+                        <input
+                          type="range"
+                          name="paddings"
+                          id="paddings-slider" />
+                      </div>
+                    </li>
+                    <li class="toolbar-list__item toolbar-item">
+                      <div class="toolbar-item__content">
+                        <span class="toolbar-item__name">Wrapper corners</span>
+                        <input
+                          type="range"
+                          name="wrapper-corners"
+                          id="wrapper-corners-slider" />
+                      </div>
+                    </li>
+                    <li class="toolbar-list__item toolbar-item">
+                      <div class="toolbar-item__content">
+                        <span class="toolbar-item__name">Shadow</span>
+                        <input type="range" name="shadow" id="shadow-slider" />
+                      </div>
+                    </li>
+                    <li
+                      class="toolbar-list__item toolbar-item toolbar-item--big">
+                      <div class="toolbar-item__content">
+                        <span class="toolbar-item__name">
+                          Background color
+                        </span>
+                        <div class="color-pallette">
+                          <button class="color-pallette__colorpicker"></button
+                          ><button class="color-pallette__colorpicker"></button
+                          ><button class="color-pallette__colorpicker"></button
+                          ><button class="color-pallette__colorpicker"></button
+                          ><button class="color-pallette__colorpicker"></button
+                          ><button class="color-pallette__colorpicker"></button>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="toolbar__buttons-group">
+                    <div class="toolbar-item__content">
+                      <button class="btn">Copy</button
+                      ><button class="btn">Save</button>
                     </div>
-                  </li>
-                </ul>
-                <div class="toolbar__buttons-group">
-                  <button class="btn">Copy</button
-                  ><button class="btn">Save</button>
+                  </div>
                 </div>
               </section>
             </main>
@@ -83,9 +110,13 @@
               <a
                 class="footer__item"
                 href="https://github.com/nibezo/telegram-style"
-                target="_blank"
-                >View code on GitHub</a
-              >
+                target="_blank">
+                <object
+                  class="icon"
+                  data="assets/github-icon.svg"
+                  type="image/svg+xml"></object>
+                <span>View code on GitHub</span>
+              </a>
             </footer>
           </div>
         </div>
