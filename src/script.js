@@ -1,6 +1,6 @@
 document.addEventListener('keydown', function(event) {
     if (event.code == 'Enter') {
-      var input = document.getElementById("input-link");
+      let input = document.getElementById("input-link");
       if (input && input.value) {
         let inputValue = document.getElementById("input-link").value;
         inputValue = inputValue.substring(13);
