@@ -139,6 +139,15 @@ body {
   cursor: pointer;
   width: 100%;
 }
+.btn--icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.2em;
+}
+.material-symbols-rounded {
+  margin-bottom: 2px;
+}
 .footer {
   display: flex;
   justify-content: center;
