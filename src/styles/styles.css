@@ -27,10 +27,11 @@ body {
   height: 100%;
   display: grid;
   align-items: center;
-  grid-template-columns: 70% auto;
+  grid-template-columns: minmax(50%, 70%) auto;
 }
 .wrapper {
   height: 100%;
+  width: 80%;
   max-width: 1400px;
   margin: 0 auto;
   display: grid;
