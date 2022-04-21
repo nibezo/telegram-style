@@ -159,3 +159,74 @@ a:hover {
 .svg path {
   color: var(--color-secondary);
 }
+
+.slider {
+  -webkit-appearance: none;
+  margin: 10px 0;
+  background-color: transparent;
+}
+.slider:focus {
+  outline: none;
+}
+.slider::-webkit-slider-runnable-track {
+  height: 8px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: var(--color-secondary);
+  border-radius: 5px;
+}
+.slider::-webkit-slider-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 50px;
+  background: var(--color-accent);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -4px;
+}
+.slider:focus::-webkit-slider-runnable-track {
+  background: var(--color-secondary);
+}
+.slider::-moz-range-track {
+  height: 8px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: var(--color-secondary);
+  border-radius: 5px;
+}
+.slider::-moz-range-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 50px;
+  background: var(--color-accent);
+  cursor: pointer;
+}
+.slider::-ms-track {
+  height: 8px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.slider::-ms-fill-lower {
+  background: var(--color-secondary);
+  border-radius: 10px;
+}
+.slider::-ms-fill-upper {
+  background: var(--color-secondary);
+  border-radius: 10px;
+}
+.slider::-ms-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 50px;
+  background: var(--color-accent);
+  cursor: pointer;
+}
+.slider:focus::-ms-fill-lower {
+  background: var(--color-secondary);
+}
+.slider:focus::-ms-fill-upper {
+  background: var(--color-secondary);
+}
