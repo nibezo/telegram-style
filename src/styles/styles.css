@@ -110,6 +110,7 @@ body {
   text-align: center;
 }
 .color-pallette {
+  width: 100%;
   display: flex;
   flex: 0 0 16.6%;
   flex-wrap: wrap;
