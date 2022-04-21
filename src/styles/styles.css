@@ -164,9 +164,6 @@ a {
   color: inherit;
   text-decoration: none;
 }
-a:hover {
-  text-decoration: underline;
-}
 .icon {
   width: 3rem;
   height: 3rem;
