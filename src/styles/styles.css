@@ -96,6 +96,7 @@ body {
   display: flex;
   column-gap: 2em;
   justify-content: space-between;
+  align-items: center;
 }
 .toolbar__actions {
   padding: 1em 1em;
