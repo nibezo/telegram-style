@@ -33,15 +33,6 @@ body {
   width: 700px;
   height: 80px;
 }
-::placeholder {
-  color: #ABABAB;
-  text-align: center;
-  font-size: 2rem;
-  line-height: 35px;
-}
-input:hover::-webkit-input-placeholder {
-  color: #eeeeee;
-}
 .input-link {
   color: #ABABAB;
   text-align: center;
@@ -53,6 +44,15 @@ input:hover::-webkit-input-placeholder {
   width: 100%;
   height: 100%;
 }
+.input-link::placeholder {
+    color: #ABABAB;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 35px;
+  }
+.input-link:hover::-webkit-input-placeholder {
+    color: #eeeeee;
+  }
 .toolbar {
 }
 .toolbar__list {
