@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="src/styles/styles.css" />
+    <link rel="stylesheet" href="src/styles/normalize.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap"
       rel="stylesheet" />
@@ -11,158 +12,143 @@
     <link
       rel="stylesheet"
       href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="src/script.js"></script>
     <title>Telegram style</title>
   </head>
   <body>
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <link rel="stylesheet" href="src/styles/styles.css" />
-        <link rel="stylesheet" href="src/styles/normalize.css" />
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Telgram style</title>
-      </head>
-      <body>
-        <div class="page">
-          <div class="wrapper">
-            <main class="main">
-              <section id="input-dropzone" class="dropzone-container">
-                <div class="dropzone">
-                  <input
-                    type="text"
-                    id="input-link"
-                    class="input-link"
-                    placeholder="Paste here a link to a telegram post" />
-                </div>
-              </section>
-              <script id="widget"></script>
-              <section class="toolbar-container">
-                <div class="toolbar">
-                  <ul class="toolbar__list toolbar-list">
-                    <li class="toolbar-list__item toolbar-item">
-                      <div class="toolbar-item__content">
-                        <span class="toolbar-item__name">Aspect Ratio</span>
-                        <select
-                          class="toolbar-item__select"
-                          name="aspect-ratio"
-                          id="aspect-ratio-select">
-                          <option value="auto">Auto</option>
-                          <option value="square">Square</option>
-                        </select>
-                      </div>
-                    </li>
-                    <li class="toolbar-list__item toolbar-item">
-                      <div class="toolbar-item__content">
-                        <span class="toolbar-item__name">Browser wrapper</span>
-                        <select
-                          class="toolbar-item__select"
-                          name="browser-wrapper"
-                          id="browser-wrapper-select">
-                          <option value="light">Light</option>
-                          <option value="dark">Dark</option>
-                        </select>
-                      </div>
-                    </li>
-                    <li class="toolbar-list__item toolbar-item">
-                      <div class="toolbar-item__content">
-                        <span class="toolbar-item__name">Paddings</span>
-                        <input
-                          class="slider"
-                          type="range"
-                          name="paddings"
-                          id="paddings-slider" />
-                      </div>
-                    </li>
-                    <li class="toolbar-list__item toolbar-item">
-                      <div class="toolbar-item__content">
-                        <span class="toolbar-item__name">Wrapper corners</span>
-                        <input
-                          class="slider"
-                          type="range"
-                          name="wrapper-corners"
-                          id="wrapper-corners-slider" />
-                      </div>
-                    </li>
-                    <li class="toolbar-list__item toolbar-item">
-                      <div class="toolbar-item__content">
-                        <span class="toolbar-item__name">Shadow</span>
-                        <input
-                          class="slider"
-                          type="range"
-                          name="shadow"
-                          id="shadow-slider" />
-                      </div>
-                    </li>
-                    <li
-                      class="toolbar-list__item toolbar-item toolbar-item--big">
+    <div class="page">
+      <div class="wrapper">
+        <main class="main">
+          <section id="input-dropzone" class="dropzone-container">
+            <div class="dropzone">
+              <input
+                type="text"
+                id="input-link"
+                class="input-link"
+                placeholder="Paste here a link to a telegram post" />
+            </div>
+          </section>
+          <script id="widget"></script>
+          <section class="toolbar-container">
+            <div class="toolbar">
+              <ul class="toolbar__list toolbar-list">
+                <li class="toolbar-list__item toolbar-item">
+                  <div class="toolbar-item__content">
+                    <span class="toolbar-item__name">Aspect Ratio</span>
+                    <select
+                      class="toolbar-item__select"
+                      name="aspect-ratio"
+                      id="aspect-ratio-select">
+                      <option value="auto">Auto</option>
+                      <option value="square">Square</option>
+                    </select>
+                  </div>
+                </li>
+                <li class="toolbar-list__item toolbar-item">
+                  <div class="toolbar-item__content">
+                    <span class="toolbar-item__name">Browser wrapper</span>
+                    <select
+                      class="toolbar-item__select"
+                      name="browser-wrapper"
+                      id="browser-wrapper-select">
+                      <option value="light">Light</option>
+                      <option value="dark">Dark</option>
+                    </select>
+                  </div>
+                </li>
+                <li class="toolbar-list__item toolbar-item">
+                  <div class="toolbar-item__content">
+                    <span class="toolbar-item__name">Paddings</span>
+                    <input
+                      class="slider"
+                      type="range"
+                      name="paddings"
+                      id="paddings-slider" />
+                  </div>
+                </li>
+                <li class="toolbar-list__item toolbar-item">
+                  <div class="toolbar-item__content">
+                    <span class="toolbar-item__name">Wrapper corners</span>
+                    <input
+                      class="slider"
+                      type="range"
+                      name="wrapper-corners"
+                      id="wrapper-corners-slider" />
+                  </div>
+                </li>
+                <li class="toolbar-list__item toolbar-item">
+                  <div class="toolbar-item__content">
+                    <span class="toolbar-item__name">Shadow</span>
+                    <input
+                      class="slider"
+                      type="range"
+                      name="shadow"
+                      id="shadow-slider" />
+                  </div>
+                </li>
+                <li class="toolbar-list__item toolbar-item toolbar-item--big">
+                  <div class="toolbar-item__content toolbar-item__content--big">
+                    <span class="toolbar-item__name"> Background color </span>
+                    <div class="color-pallette">
                       <div
-                        class="toolbar-item__content toolbar-item__content--big">
-                        <span class="toolbar-item__name">
-                          Background color
-                        </span>
-                        <div class="color-pallette">
-                          <div
-                            class="color-pallette__colorpicker colorpicker colorpicker--first"
-                            role="button"></div>
-                          <div
-                            class="color-pallette__colorpicker colorpicker colorpicker--second"
-                            role="button"></div>
-                          <div
-                            class="color-pallette__colorpicker colorpicker colorpicker--third"
-                            role="button"></div>
-                          <div
-                            class="color-pallette__colorpicker colorpicker colorpicker--fourth"
-                            role="button"></div>
-                          <div
-                            class="color-pallette__colorpicker colorpicker colorpicker--fifth"
-                            role="button"></div>
-                          <div
-                            class="color-pallette__colorpicker colorpicker colorpicker--sixth"
-                            role="button"></div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                  <div class="toolbar__actions">
-                    <div class="toolbar__buttons-group">
-                      <button id="reset-btn" class="btn reset-btn"><span class="material-symbols-outlined">
-                        restart_alt
-                        </span>Reset</button>
-                      <button class="btn btn--icon">
-                        <span class="material-symbols-rounded">
-                          assignment </span
-                        ><span>Copy</span></button
-                      ><button class="btn btn--icon">
-                        <span class="material-symbols-rounded"> save </span
-                        ><span>Save</span>
-                      </button>
+                        class="color-pallette__colorpicker colorpicker colorpicker--first"
+                        role="button"></div>
+                      <div
+                        class="color-pallette__colorpicker colorpicker colorpicker--second"
+                        role="button"></div>
+                      <div
+                        class="color-pallette__colorpicker colorpicker colorpicker--third"
+                        role="button"></div>
+                      <div
+                        class="color-pallette__colorpicker colorpicker colorpicker--fourth"
+                        role="button"></div>
+                      <div
+                        class="color-pallette__colorpicker colorpicker colorpicker--fifth"
+                        role="button"></div>
+                      <div
+                        class="color-pallette__colorpicker colorpicker colorpicker--sixth"
+                        role="button"></div>
                     </div>
                   </div>
+                </li>
+              </ul>
+              <div class="toolbar__actions">
+                <div class="toolbar__buttons-group">
+                  <button id="reset-btn" class="btn reset-btn">
+                    <span class="material-symbols-outlined"> restart_alt </span
+                    >Reset
+                  </button>
+                  <button class="btn btn--icon">
+                    <span class="material-symbols-rounded"> assignment </span
+                    ><span>Copy</span></button
+                  ><button class="btn btn--icon">
+                    <span class="material-symbols-rounded"> save </span
+                    ><span>Save</span>
+                  </button>
                 </div>
-              </section>
-            </main>
-            <footer class="footer">
-              <a
-                class="footer__item"
-                href="https://github.com/nibezo/telegram-style"
-                target="_blank">
-                <object
-                  class="icon"
-                  data="src/assets/github-icon.svg"
-                  type="image/svg+xml"></object>
-                <span>View code on GitHub</span>
-              </a>
-            </footer>
-          </div>
-        </div>
-      </body>
-    </html>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer class="footer">
+          <a
+            class="footer__item"
+            href="https://github.com/nibezo/telegram-style"
+            target="_blank">
+            <object
+              class="icon"
+              data="src/assets/github-icon.svg"
+              type="image/svg+xml"></object>
+            <span>View code on GitHub</span>
+          </a>
+        </footer>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
   </body>
 </html>
