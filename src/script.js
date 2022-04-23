@@ -20,3 +20,11 @@ document.addEventListener("keydown", function (event) {
     }
   }
 });
+
+function resetPost() {
+  document.getElementById("input-link").style.visibility = "visible";
+  document.getElementsByTagName("script")[0].removeAttribute("sync"); 
+  document.getElementsByTagName("script")[0].removeAttribute("src"); 
+  document.getElementsByTagName("script")[0].removeAttribute("data-telegram-post"); 
+  document.getElementsByTagName("script")[0].removeAttribute("data-width");
+}
