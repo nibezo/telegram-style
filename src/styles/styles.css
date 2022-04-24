@@ -299,3 +299,7 @@ option {
 .slider:focus::-ms-fill-upper {
   background: var(--color-secondary);
 }
+.footer {
+  display: flex;
+  align-items: center;
+}
