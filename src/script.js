@@ -16,7 +16,6 @@ document.addEventListener("keydown", function (event) {
       scriptWidget.setAttribute("data-telegram-post", inputValue);
       scriptWidget.setAttribute("data-width", "100%");
       document.getElementById("input-dropzone").appendChild(scriptWidget);
-      // document.getElementsById("input-dropzone").style.backgroundColor = "100px";
       backgroundGradient = true;
       firstButtonClick();      
     } else {
