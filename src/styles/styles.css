@@ -303,3 +303,7 @@ option {
   display: flex;
   align-items: center;
 }
+
+.footer__item {
+  margin-right: 10px;
+}
