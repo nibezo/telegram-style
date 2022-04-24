@@ -39,35 +39,41 @@ function resetPost() {
 function firstButtonClick() {
   if(backgroundGradient === true) {
     document.getElementById("input-dropzone").style.backgroundImage = "linear-gradient(to bottom right, #fd6585,rgb(255, 211, 165)";
+    document.getElementById("input-dropzone").style.borderRadius = "10px";
   }
 }
 
 function secondButtonClick() {
   if(backgroundGradient === true) {
     document.getElementById("input-dropzone").style.backgroundImage = "linear-gradient(to bottom right, #00dbde, #fc00ff)";
+    document.getElementById("input-dropzone").style.borderRadius = "10px";
   }
 }
 
 function thirdButtonClick() {
   if(backgroundGradient === true) {
     document.getElementById("input-dropzone").style.backgroundImage = "linear-gradient(to bottom, #c084fc, #6366f1)";
+    document.getElementById("input-dropzone").style.borderRadius = "10px";
   }
 }
 
 function fourthButtonClick() {
   if(backgroundGradient === true) {
     document.getElementById("input-dropzone").style.backgroundImage = "linear-gradient(to bottom, #ed6ea0, #ec8c69)";
+    document.getElementById("input-dropzone").style.borderRadius = "10px";
   }
 }
 
 function fifthButtonClick() {
   if(backgroundGradient === true) {
     document.getElementById("input-dropzone").style.backgroundImage = "linear-gradient(to bottom right, #f9a8d4, #f472b6, #f87171)";
+    document.getElementById("input-dropzone").style.borderRadius = "10px";
   }
 }
 
 function sixthButtonClick() {
   if(backgroundGradient === true) {
     document.getElementById("input-dropzone").style.backgroundImage = "linear-gradient(to bottom right, #84fab0, #8fd3f4)";
+    document.getElementById("input-dropzone").style.borderRadius = "10px";
   }
 }
