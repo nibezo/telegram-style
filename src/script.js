@@ -7,7 +7,7 @@ document.addEventListener("keydown", function (event) {
     if (input && input.value) {
       let inputValue = document.getElementById("input-link").value;
       inputValue = inputValue.substring(13);
-      document.getElementById("input-link").style.visibility = "hidden";
+      document.getElementById("input-link").style.display = "none";
 
       let scriptWidget = document.createElement("script");
       scriptWidget.setAttribute("id", "widget");
@@ -34,7 +34,7 @@ function resetPost() {
     element[index].parentNode.removeChild(element[index]);
   }
   document.getElementById("widget").remove();
-  document.getElementById("input-link").style.visibility = "visible";
+  document.getElementById("input-link").style.display = "block";
   document.getElementById("input-dropzone").style.backgroundImage = "";
   backgroundGradient = false;
 }
