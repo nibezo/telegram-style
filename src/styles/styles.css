@@ -219,6 +219,7 @@ input[data-autocompleted] {
 .footer {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 1em;
 }
 .footer__item {
@@ -312,10 +313,6 @@ option {
 }
 .slider:focus::-ms-fill-upper {
   background: var(--color-secondary);
-}
-.footer {
-  display: flex;
-  align-items: center;
 }
 
 .footer__item {
