@@ -40,6 +40,21 @@ body {
   display: grid;
   grid-template-rows: 1fr min-content;
 }
+<<<<<<< HEAD
+=======
+.dropzone-container {
+  justify-self: center;
+  width: 70%;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
+input[data-autocompleted] {
+    background-color: transparent !important;
+}
+>>>>>>> a93be85208ff361fd7c372f956aa218b8e63a54f
 .dropzone {
 }
 .input-link {
