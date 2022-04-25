@@ -32,13 +32,12 @@
                 class="input-link"
                 placeholder="Paste here a link to a telegram post" />
             </div>
-
           </section>
           <section class="toolbar-container">
             <div class="toolbar">
               <ul class="toolbar__list toolbar-list">
                 <li class="toolbar-list__item toolbar-item">
-                  <div class="toolbar-item__content">
+                  <label class="toolbar-item__content">
                     <span class="toolbar-item__name">Aspect Ratio</span>
                     <select
                       class="toolbar-item__select"
@@ -47,10 +46,10 @@
                       <option value="auto">Auto</option>
                       <option value="square">Square</option>
                     </select>
-                  </div>
+                  </label>
                 </li>
                 <li class="toolbar-list__item toolbar-item">
-                  <div class="toolbar-item__content">
+                  <label class="toolbar-item__content">
                     <span class="toolbar-item__name">Browser wrapper</span>
                     <select
                       class="toolbar-item__select"
@@ -59,37 +58,37 @@
                       <option value="light">Light</option>
                       <option value="dark">Dark</option>
                     </select>
-                  </div>
+                  </label>
                 </li>
                 <li class="toolbar-list__item toolbar-item">
-                  <div class="toolbar-item__content">
+                  <label class="toolbar-item__content">
                     <span class="toolbar-item__name">Paddings</span>
                     <input
                       class="slider"
                       type="range"
                       name="paddings"
                       id="paddings-slider" />
-                  </div>
+                  </label>
                 </li>
                 <li class="toolbar-list__item toolbar-item">
-                  <div class="toolbar-item__content">
+                  <label class="toolbar-item__content">
                     <span class="toolbar-item__name">Wrapper corners</span>
                     <input
                       class="slider"
                       type="range"
                       name="wrapper-corners"
                       id="wrapper-corners-slider" />
-                  </div>
+                  </label>
                 </li>
                 <li class="toolbar-list__item toolbar-item">
-                  <div class="toolbar-item__content">
+                  <label class="toolbar-item__content">
                     <span class="toolbar-item__name">Shadow</span>
                     <input
                       class="slider"
                       type="range"
                       name="shadow"
                       id="shadow-slider" />
-                  </div>
+                  </label>
                 </li>
                 <li class="toolbar-list__item toolbar-item toolbar-item--big">
                   <div class="toolbar-item__content toolbar-item__content--big">
@@ -97,29 +96,38 @@
                     <div class="color-pallette">
                       <div
                         class="color-pallette__colorpicker colorpicker colorpicker--first"
-                        role="button" onclick="firstButtonClick()"></div>
+                        role="button"
+                        onclick="firstButtonClick()"></div>
                       <div
                         class="color-pallette__colorpicker colorpicker colorpicker--second"
-                        role="button" onclick="secondButtonClick()"></div>
+                        role="button"
+                        onclick="secondButtonClick()"></div>
                       <div
                         class="color-pallette__colorpicker colorpicker colorpicker--third"
-                        role="button" onclick="thirdButtonClick()"></div>
+                        role="button"
+                        onclick="thirdButtonClick()"></div>
                       <div
                         class="color-pallette__colorpicker colorpicker colorpicker--fourth"
-                        role="button" onclick="fourthButtonClick()"></div>
+                        role="button"
+                        onclick="fourthButtonClick()"></div>
                       <div
                         class="color-pallette__colorpicker colorpicker colorpicker--fifth"
-                        role="button" onclick="fifthButtonClick()"></div>
+                        role="button"
+                        onclick="fifthButtonClick()"></div>
                       <div
                         class="color-pallette__colorpicker colorpicker colorpicker--sixth"
-                        role="button" onclick="sixthButtonClick()"></div>
+                        role="button"
+                        onclick="sixthButtonClick()"></div>
                     </div>
                   </div>
                 </li>
               </ul>
               <div class="toolbar__actions">
                 <div class="toolbar__buttons-group">
-                  <button onclick="resetPost()" id="reset-btn" class="btn reset-btn">
+                  <button
+                    onclick="resetPost()"
+                    id="reset-btn"
+                    class="btn reset-btn">
                     <span class="material-symbols-outlined"> restart_alt </span
                     >Reset
                   </button>
@@ -146,7 +154,12 @@
               type="image/svg+xml"></object>
             <span>View code on GitHub</span>
           </a>
-          <script async src="https://telegram.org/js/telegram-widget.js?19" data-telegram-share-url="https://telegram-style.vercel.app/" data-comment="Make a nice screenshot of any public telegram post easily!" data-text="notext"></script>
+          <script
+            async
+            src="https://telegram.org/js/telegram-widget.js?19"
+            data-telegram-share-url="https://telegram-style.vercel.app/"
+            data-comment="Make a nice screenshot of any public telegram post easily!"
+            data-text="notext"></script>
         </footer>
       </div>
     </div>
