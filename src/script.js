@@ -53,7 +53,8 @@ function resetPost() {
 
 function togglersListener() {
   const togglers = document.getElementById("togglers");
-  togglers.addEventListener("change", (e) => {
+  togglers.addEventListener("input", (e) => {
+    console.log(e);
     const toggler = e.target;
     switch (toggler.name) {
       case "paddings":
