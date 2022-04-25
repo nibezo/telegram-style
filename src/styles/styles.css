@@ -210,12 +210,6 @@ input[data-autocompleted] {
 .material-symbols-rounded {
   margin-bottom: 2px;
 }
-.reset-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  column-gap: 0.2em;
-}
 .footer {
   display: flex;
   justify-content: center;
