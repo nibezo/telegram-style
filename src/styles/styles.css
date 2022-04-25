@@ -14,6 +14,8 @@ html {
   --color-secondary-active: #eeeeee;
   --color-accent: #ec4899;
   --color-accent-active: #cc2c7c;
+
+  --widget-paddings: 5px;
 }
 body {
   height: 100vh;
@@ -78,8 +80,8 @@ input[data-autocompleted] {
   border-color: var(--color-secondary-active);
 }
 .widget-container {
-  padding: 5px;
-  padding-right: 36px;
+  padding: var(--widget-paddings);
+  padding-right: calc(var(--widget-paddings) + 36px);
 }
 .toolbar {
   background-color: var(--background-secondary);
