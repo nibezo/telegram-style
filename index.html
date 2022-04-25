@@ -35,12 +35,12 @@
           </section>
           <section class="toolbar-side">
             <div class="toolbar">
-              <ul class="toolbar__list toolbar-list">
+              <ul class="toolbar__list toolbar-list" id="togglers">
                 <li class="toolbar-list__item toolbar-item">
                   <label class="toolbar-item__content">
                     <span class="toolbar-item__name">Aspect Ratio</span>
                     <select
-                      class="toolbar-item__select"
+                      class="toolbar-item__select toggler"
                       name="aspect-ratio"
                       id="aspect-ratio-select">
                       <option value="auto">Auto</option>
@@ -52,7 +52,7 @@
                   <label class="toolbar-item__content">
                     <span class="toolbar-item__name">Browser wrapper</span>
                     <select
-                      class="toolbar-item__select"
+                      class="toolbar-item__select toggler"
                       name="browser-wrapper"
                       id="browser-wrapper-select">
                       <option value="light">Light</option>
@@ -64,7 +64,11 @@
                   <label class="toolbar-item__content">
                     <span class="toolbar-item__name">Paddings</span>
                     <input
-                      class="slider"
+                      valueAsNumber="0"
+                      min="5"
+                      max="25"
+                      step="1"
+                      class="slider toggler"
                       type="range"
                       name="paddings"
                       id="paddings-slider" />
@@ -74,7 +78,7 @@
                   <label class="toolbar-item__content">
                     <span class="toolbar-item__name">Wrapper corners</span>
                     <input
-                      class="slider"
+                      class="slider toggler"
                       type="range"
                       name="wrapper-corners"
                       id="wrapper-corners-slider" />
@@ -84,7 +88,7 @@
                   <label class="toolbar-item__content">
                     <span class="toolbar-item__name">Shadow</span>
                     <input
-                      class="slider"
+                      class="slider toggler"
                       type="range"
                       name="shadow"
                       id="shadow-slider" />

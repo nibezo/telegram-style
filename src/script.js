@@ -1,4 +1,9 @@
 let backgroundGradient = false;
+const settings = {
+  paddings: 0,
+  wrapperCorners: 0,
+  shadow: null,
+};
 
 document.addEventListener("keydown", function (event) {
   if (event.code == "Enter") {
@@ -45,6 +50,26 @@ function resetPost() {
   document.getElementById("widget-container").style.backgroundImage = "";
   backgroundGradient = false;
 }
+
+function togglersListener() {
+  const togglers = document.getElementById("togglers");
+  togglers.addEventListener("change", (e) => {
+    const toggler = e.target;
+    switch (toggler.name) {
+      case "paddings":
+        settings[toggler.name] = toggler.value;
+        document.body.style.setProperty(
+          "--widget-paddings",
+          `${settings.paddings}px`
+        );
+        break;
+
+      default:
+        break;
+    }
+  });
+}
+togglersListener();
 
 function firstButtonClick() {
   if (backgroundGradient === true) {

@@ -80,6 +80,7 @@ input[data-autocompleted] {
   border-color: var(--color-secondary-active);
 }
 .widget-container {
+  box-sizing: content-box;
   padding: var(--widget-paddings);
   padding-right: calc(var(--widget-paddings) + 36px);
 }
