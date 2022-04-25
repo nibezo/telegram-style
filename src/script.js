@@ -34,7 +34,7 @@ document.addEventListener("keydown", function (event) {
       backgroundGradient = true;
       firstButtonClick();
     } else {
-      alert("Please, enter a link!");
+      showToast();
     }
   }
 });
@@ -116,5 +116,23 @@ function sixthButtonClick() {
     document.getElementById("widget-container").style.backgroundImage =
       "linear-gradient(to bottom right, #84fab0, #8fd3f4)";
     document.getElementById("widget-container").style.borderRadius = "10px";
+  }
+}
+
+let isToastAlreadyShow = false;
+function showToast() {
+  const toast = document.getElementById("toast");
+
+  if (!isToastAlreadyShow) {
+    toast.classList.add("toast--show");
+    isToastAlreadyShow = true;
+
+    setTimeout(() => {
+      toast.classList.remove("toast--show");
+    }, 2000);
+
+    setTimeout(() => {
+      isToastAlreadyShow = false;
+    }, 2500);
   }
 }

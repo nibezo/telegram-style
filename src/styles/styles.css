@@ -35,6 +35,7 @@ body {
   column-gap: 4rem;
 }
 .wrapper {
+  position: relative;
   height: 100%;
   width: 80%;
   max-width: 1400px;
@@ -319,4 +320,19 @@ option {
 
 .footer__item {
   margin-right: 10px;
+}
+
+.toast {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(-100%);
+  transition: 0.3s;
+
+  padding: 0.5rem 1rem;
+  background-color: var(--color-accent);
+  border-radius: 10px;
+}
+.toast--show {
+  transform: translateY(50%);
 }
