@@ -28,7 +28,9 @@ body {
   height: 100%;
   display: grid;
   align-items: center;
+  justify-content: center;
   grid-template-columns: minmax(50%, 70%) auto;
+  column-gap: 4rem;
 }
 .wrapper {
   height: 100%;
@@ -37,10 +39,6 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-rows: 1fr min-content;
-}
-.dropzone-container {
-  justify-self: center;
-  width: 70%;
 }
 .dropzone {
 }
@@ -68,8 +66,9 @@ body {
 .input-link:focus {
   border-color: var(--color-secondary-active);
 }
-.toolbar-container {
-  justify-self: center;
+.widget-container {
+  padding: 5px;
+  background-color: blue;
 }
 .toolbar {
   background-color: var(--background-secondary);
